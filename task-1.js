@@ -51,7 +51,7 @@ console.log(getNamesSortedByFriendsCount(users));
     const arr = [];
      users
       .reduce((allSkills, {skills}) => [...allSkills, ...skills], [])
-      .map(elem => {
+      .forEach(elem => {
         if (!arr.includes(elem)) {
           arr.push(elem);
         }
